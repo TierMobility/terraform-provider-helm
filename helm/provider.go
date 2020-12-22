@@ -149,11 +149,11 @@ func Provider() terraform.ResourceProvider {
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"helm_release":    resourceRelease(),
-			"helm_repository": resourceRepository(),
+			"helm2_release":    resourceRelease(),
+			"helm2_repository": resourceRepository(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
-			"helm_repository": dataRepository(),
+			"helm2_repository": dataRepository(),
 		},
 	}
 	p.ConfigureFunc = func(d *schema.ResourceData) (interface{}, error) {
