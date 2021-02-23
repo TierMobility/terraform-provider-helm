@@ -8,7 +8,7 @@ PKG_OS ?= darwin linux
 PKG_ARCH ?= amd64
 BASE_PATH ?= $(shell pwd)
 BUILD_PATH ?= $(BASE_PATH)/build
-PROVIDER := $(shell basename $(BASE_PATH))
+PROVIDER := $(shell basename $(BASE_PATH))2
 BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 VERSION ?= v0.0.0
 ifneq ($(origin TRAVIS_TAG), undefined)
